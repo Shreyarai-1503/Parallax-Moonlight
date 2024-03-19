@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MoonLight</title>
+</head>
+
+<body>
+    <section>
+        <img src="./assets/bg.jpg" id="bg">
+        <img src="./assets/moon.png" id="moon">
+        <img src="./assets/mountain.png" id="mountain">
+        <img src="./assets/road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+
+    <div class="centered">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate maiores a, corporis, magnam consequuntur eos reprehenderit molestias officia, unde dolorum deserunt consectetur provident? Voluptate id ipsum ratione ullam voluptatem rem dolor nulla cumque fugit nesciunt molestias molestiae, doloribus, debitis adipisci corporis in impedit quam. Perspiciatis cupiditate sed possimus! Repudiandae, harum, ut incidunt labore natus porro repellat molestiae dolorem quidem autem, assumenda deserunt aspernatur. Sapiente, maiores ipsam reprehenderit quis debitis nulla nam, saepe modi maxime optio delectus accusamus consectetur. Iure iste, impedit enim itaque mollitia nostrum facilis voluptatum doloremque! Ipsam, cumque?</p>
+        <br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem fuga labore aliquid placeat quibusdam reiciendis voluptatem rerum corporis eos quia cumque alias autem provident illo laborum quo, nesciunt facilis. Repellat, veritatis ipsa. Nesciunt modi ipsam quo repellat, minima, itaque consequatur iste temporibus qui aliquam repudiandae maxime fuga esse sunt expedita distinctio mollitia labore cumque id ut impedit animi totam! Vero ratione velit debitis nisi maxime deserunt adipisci id, ipsum eligendi officia, autem numquam doloremque quae harum perspiciatis! Quaerat quis, eaque repellendus voluptates inventore nemo incidunt nobis blanditiis dolorum sint. Illum, excepturi odio tempore reprehenderit debitis commodi sed aliquid sunt accusantium.</p>
+    </div>
+
+    <script>
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px'
+            moon.style.left = value * 0.5 + 'px'
+            mountain.style.top = -value * 0.1 + 'px'
+            road.style.top = value * 0.15 + 'px'
+            text.style.top = value * 1 + 'px'
+        })
+    </script>
+</body>
+
+</html>
